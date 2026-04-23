@@ -113,12 +113,21 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: var(--white);
-  border-bottom: 1px solid var(--divider);
+  background: var(--navy);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
   transition: box-shadow var(--trans);
   padding: 0;
 }
 .site-nav.scrolled {
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+}
+
+/* Light variant — homepage only */
+.site-nav.nav-light {
+  background: var(--white);
+  border-bottom: 1px solid var(--divider);
+}
+.site-nav.nav-light.scrolled {
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
@@ -136,7 +145,7 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
   font-family: var(--serif);
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--white);
   line-height: 1.2;
 }
 .nav-logo span {
@@ -145,9 +154,12 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
   font-size: 0.65rem;
   font-weight: 300;
   letter-spacing: 0.15em;
-  color: var(--gold);
+  color: var(--gold-lt);
   text-transform: uppercase;
 }
+/* Light nav overrides */
+.nav-light .nav-logo { color: var(--navy); }
+.nav-light .nav-logo span { color: var(--gold); }
 
 .nav-links {
   display: flex;
@@ -158,7 +170,7 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
 .nav-links a {
   font-size: 0.875rem;
   font-weight: 400;
-  color: var(--text);
+  color: rgba(255,255,255,0.85);
   transition: color var(--trans);
   position: relative;
 }
@@ -167,7 +179,7 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
   position: absolute;
   bottom: -4px; left: 0; right: 0;
   height: 2px;
-  background: var(--gold);
+  background: var(--gold-lt);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform var(--trans);
@@ -175,17 +187,25 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
 .nav-links a:hover::after,
 .nav-links a.active::after { transform: scaleX(1); }
 .nav-links a:hover,
-.nav-links a.active { color: var(--navy); }
+.nav-links a.active { color: var(--white); }
+
+/* Light nav link overrides */
+.nav-light .nav-links a { color: var(--text); }
+.nav-light .nav-links a::after { background: var(--gold); }
+.nav-light .nav-links a:hover,
+.nav-light .nav-links a.active { color: var(--navy); }
 
 .nav-links .nav-cta a {
-  background: var(--navy);
+  background: var(--gold);
   color: var(--white);
   padding: 8px 20px;
   border-radius: var(--radius);
   font-size: 0.8rem;
 }
 .nav-links .nav-cta a::after { display: none; }
-.nav-links .nav-cta a:hover { background: #2a4f82; }
+.nav-links .nav-cta a:hover { background: var(--gold-lt); }
+.nav-light .nav-links .nav-cta a { background: var(--navy); }
+.nav-light .nav-links .nav-cta a:hover { background: #2a4f82; }
 
 /* Hamburger */
 .nav-toggle {
@@ -200,9 +220,10 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
 .nav-toggle span {
   display: block;
   width: 24px; height: 2px;
-  background: var(--navy);
+  background: var(--white);
   transition: var(--trans);
 }
+.nav-light .nav-toggle span { background: var(--navy); }
 .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav-toggle.open span:nth-child(2) { opacity: 0; }
 .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
