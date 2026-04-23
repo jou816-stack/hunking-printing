@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="航金印刷廠線上訂購：填寫訂購單後我們將盡快與您聯繫確認。">
+  <title>線上訂購 — 航金印刷廠 HUNKING</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" role="navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">航金印刷廠<span>HUNKING PRINTING</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="service.html">產品與服務</a></li>
+      <li><a href="sutra.html">經書種類與訂購</a></li>
+      <li><a href="benefit.html">寫經的好處</a></li>
+      <li><a href="knowledge.html">印刷小知識</a></li>
+      <li><a href="contact.html">聯繫我們</a></li>
+      <li class="nav-cta"><a href="order.html">線上訂購</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="開啟選單"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="index.html">首頁</a><a href="service.html">產品與服務</a><a href="sutra.html">經書種類與訂購</a>
+  <a href="benefit.html">寫經的好處</a><a href="knowledge.html">印刷小知識</a>
+  <a href="contact.html">聯繫我們</a><a href="order.html">線上訂購</a>
+</div>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <nav class="breadcrumb"><a href="index.html">首頁</a><span class="sep">›</span><span>線上訂購</span></nav>
+      <span class="section-label" style="color:var(--gold-lt);">Order Online</span>
+      <h1>線上訂購</h1>
+      <p>填寫後我們會盡快電話與您確認訂單細節</p>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="two-col">
+      <!-- Form -->
+      <div class="fade-in">
+        <span class="section-label">訂購單</span>
+        <h2>填寫訂購資料</h2>
+        <div class="divider"></div>
+
+        <form action="mailto:hun.king@msa.hinet.net" method="post" enctype="text/plain" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">姓名 *</label>
+              <input type="text" id="name" name="姓名" required placeholder="您的姓名">
+            </div>
+            <div class="form-group">
+              <label for="phone">聯絡電話 *</label>
+              <input type="tel" id="phone" name="電話" required placeholder="09XX-XXX-XXX">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">電子信箱</label>
+            <input type="email" id="email" name="Email" placeholder="your@email.com">
+          </div>
+
+          <div class="form-group">
+            <label for="type">訂購類別 *</label>
+            <select id="type" name="訂購類別" required>
+              <option value="">— 請選擇 —</option>
+              <optgroup label="印刷服務">
+                <option>彩色影印</option>
+                <option>黑白影印</option>
+                <option>名片印製</option>
+                <option>喜帖印製</option>
+                <option>廣告印刷</option>
+                <option>大圖輸出</option>
+                <option>備審資料/作品集列印</option>
+              </optgroup>
+              <optgroup label="裝訂服務">
+                <option>膠裝</option>
+                <option>環裝</option>
+                <option>精裝</option>
+                <option>鐵圈裝</option>
+                <option>護貝</option>
+                <option>上亮膜（冷裱）</option>
+              </optgroup>
+              <optgroup label="經書訂購">
+                <option>白陽修道子的心聲 $85/本</option>
+                <option>道真理真天命真 $50/本</option>
+                <option>畜道輪迴記 $35/本</option>
+                <option>生命密碼讀本 $36/本</option>
+                <option>心經手抄本 $20/本</option>
+                <option>地藏菩薩本願經手抄本 $36/本</option>
+                <option>金剛般若波羅密經手抄本 $20/本</option>
+                <option>觀世音菩薩普門品手抄本 $20/本</option>
+                <option>彌勒救苦真經手抄本 $20/本</option>
+                <option>福德正神金經 $10/本</option>
+                <option>其他經書（請在備註說明）</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="qty">數量</label>
+            <input type="number" id="qty" name="數量" min="1" placeholder="請填寫數量">
+          </div>
+
+          <div class="form-group">
+            <label for="delivery">收件地址（宅配用）</label>
+            <input type="text" id="delivery" name="收件地址" placeholder="如需宅配請填寫，否則可留空">
+          </div>
+
+          <div class="form-group">
+            <label for="note">備註</label>
+            <textarea id="note" name="備註" placeholder="請填寫特殊需求，例如：紙張規格、顏色要求、功德主姓名等..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;font-size:1rem;padding:16px;">送出訂購單</button>
+          <p style="font-size:0.78rem;color:#888;margin-top:12px;text-align:center;">
+            送出後會開啟您的電子郵件程式，或直接來電 03-4792249 洽詢。
+          </p>
+        </form>
+      </div>
+
+      <!-- Info sidebar -->
+      <div class="fade-in">
+        <div style="background:var(--divider);padding:32px;border-radius:4px;margin-bottom:24px;">
+          <h3 style="color:var(--navy);margin-bottom:20px;">📦 宅配說明</h3>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;font-size:0.88rem;color:#444;">
+            <li style="padding-bottom:12px;border-bottom:1px solid #D8D2C9;">一般宅配運費 <strong>100元</strong></li>
+            <li style="padding-bottom:12px;border-bottom:1px solid #D8D2C9;">訂購 <strong>200本以上</strong>，國內免運費</li>
+            <li style="padding-bottom:12px;border-bottom:1px solid #D8D2C9;">海外訂購請來電詢問</li>
+            <li>亦可親自到店取件，無需運費</li>
+          </ul>
+        </div>
+
+        <div style="background:var(--navy);color:var(--white);padding:32px;border-radius:4px;margin-bottom:24px;">
+          <h3 style="color:var(--gold-lt);margin-bottom:20px;">💡 傳檔快速列印</h3>
+          <p style="font-size:0.88rem;color:rgba(255,255,255,0.8);line-height:1.9;">
+            需要快速輸出？可將電子檔（PDF、JPG等）傳給我們，到店即可取件。
+          </p>
+          <p style="font-size:0.88rem;color:rgba(255,255,255,0.8);line-height:1.9;margin-top:12px;">
+            請加 LINE 傳檔，或以 Email 傳送：<br>
+            <a href="mailto:hun.king@msa.hinet.net" style="color:var(--gold-lt);">hun.king@msa.hinet.net</a>
+          </p>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:12px;">
+            ※ 圖片3頁以上請建相簿後傳送，謝謝。
+          </p>
+        </div>
+
+        <div style="background:var(--divider);padding:24px;border-radius:4px;">
+          <h3 style="color:var(--navy);margin-bottom:16px;font-size:1rem;">🕐 營業時間</h3>
+          <table style="width:100%;font-size:0.85rem;border-collapse:collapse;">
+            <tr>
+              <td style="padding:6px 0;color:#555;border-bottom:1px solid #D8D2C9;">週一 ～ 週五</td>
+              <td style="padding:6px 0;font-weight:500;text-align:right;border-bottom:1px solid #D8D2C9;">09:00 – 20:00</td>
+            </tr>
+            <tr>
+              <td style="padding:6px 0;color:#555;border-bottom:1px solid #D8D2C9;">週六</td>
+              <td style="padding:6px 0;font-weight:500;text-align:right;border-bottom:1px solid #D8D2C9;">09:00 – 11:30</td>
+            </tr>
+            <tr>
+              <td style="padding:6px 0;color:#999;">週日 &amp; 國定假日</td>
+              <td style="padding:6px 0;color:#999;text-align:right;">公休</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">航金印刷廠<span>HUNKING PRINTING</span></div>
+        <p style="margin-top:16px;font-size:0.82rem;max-width:260px;line-height:1.8;">桃園市龍潭區中正路107巷5號<br>📞 03-4792249</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">首頁</a><a href="service.html">產品與服務</a><a href="sutra.html">經書種類與訂購</a>
+        <a href="order.html">線上訂購</a><a href="benefit.html">寫經的好處</a><a href="knowledge.html">印刷小知識</a><a href="contact.html">聯繫我們</a>
+      </div>
+    </div>
+    <div class="footer-copy">&copy; 2024 航金印刷廠 HUNKING PRINTING．桃園市龍潭區．All rights reserved.</div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
