@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hunking-printing.com/sitemap.xml
